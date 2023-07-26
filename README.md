@@ -65,10 +65,12 @@ Output: 3,3,NORTH
 ## Project Specifications 
 
 ### Running the project 
-  The Project is developed using Node v20.3 and typescript and uses `yarn` as package manager. Tests are written in `jest`
+  The application is developed using Node v20.3 and typescript and uses `yarn` as package manager. Tests are written in `jest`.
+  The following commands are used to set up and run the application.
 
 ```shell
 $ yarn
+$ yarn build
 $ yarn start
 $ yarn test
 ```
@@ -80,7 +82,12 @@ $ yarn start:dev
 $ yarn test:watch
 ```
 
+### What the application supports
+  Once you run the application using ``yarn start``, you will find the command prompt asking to enter the command. The commands are case insensitive and can accept both lowercase and uppercase letters.
+  Valid commands are listed as above. Anything added other than those, would result in an invalid error message. 
+  You can exit the application either using EXIT or using the keyboard CTRL+C.
 
 ### Limitations and refactor notes
  - currently only commands from the CLI are supported.It does not support commands from files.
+ - Provided the setup for Docker, but they are still work in progress
 

@@ -5,14 +5,15 @@
   "main": "app.js",
   "scripts": {
     "build": "rimraf ./dist && tsc",
-    "start": "yarn build && node dist/app.js",
+    "start": "node dist/app.js",
     "start:dev": "nodemon",
     "lint": "eslint --ignore-path .eslintignore --ext .ts,.js",
     "lint:fix": "yarn lint --fix",
     "test": "jest",
     "test:watch": "jest --watchAll",
     "format": "prettier --ignore-path .gitignore --config .prettierrc '**/*.+(js|ts|json)' --write",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "ci": "yarn install --frozen-lockfile"
   },
   "keywords": [],
   "author": "",

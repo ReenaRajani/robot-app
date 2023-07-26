@@ -1,0 +1,15 @@
+version: '3.7'
+
+services:
+  robot-app-ts-node-docker:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: production
+    volumes:
+      - /src
+      - /node_modules
+    ports:
+      - 3000:3000
+    container_name: ts-node-docker
+    command: yarn start
